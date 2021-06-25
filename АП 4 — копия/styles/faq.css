@@ -1,0 +1,301 @@
+@import "reset.css";
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 200;
+    src: url("../fonts/Inter/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CSTM Xprmntl 02";
+    src: url("../fonts/CSTM-Xprmntl/CSTMXprmntl02-Italic.otf") format("truetype");
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+.wrapper{
+    width: 88.8vw;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.header {
+    display: inline-flex;
+    position: absolute;
+    z-index: 2;
+    width: 88.8vw;
+    left: 5%;
+    right: 5%;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.75vw;
+}
+
+#menu{
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: -500vh;
+    left: 0;
+}
+
+#a_faq{
+    font-size: 72px;
+    font-family: "CSTM Xprmntl 02";
+    font-weight: normal;
+    color: white;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vw;
+    height: 4vw;
+}
+
+#menu_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>nav{
+    font-size: 72px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 15.9vw;
+}
+
+.wrapper>nav>ul>li{
+    text-transform: uppercase;
+    padding-top: 35px;
+}
+
+.wrapper>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+#close_icon{
+    margin-left: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+    height: 15.4vw;
+    max-height: 223px;
+}
+
+.footer-up{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 121px;
+    align-items: flex-end;
+}
+
+.footer-up>a{
+        font-size: 18px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+}
+
+.footer-up>svg{
+    cursor: pointer;
+}
+
+
+.social_media{
+    display: flex;
+    align-items: center;
+}
+
+#fb_a{
+    margin-left: 35px;
+}
+
+.footer-down{
+    padding-top: 24px;
+}
+
+.footer-down>p{
+    font-size: 11px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-transform: lowercase;
+}
+
+.footer-down>p:first-child{
+    text-transform: uppercase;
+}
+
+
+.hr-down{
+    align-self: flex-end;
+    height: 1px;
+    width: 77.6vw;
+    max-width: 1118px;
+    background-color: #bababa;
+}
+
+.footer-down>*{
+    display: inline-block;
+}
+
+.footer-down>p:last-child{
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.social_media>a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.center_1,.center_2,.center_3{
+    margin-top: 180px;
+}
+
+.center_1, .center_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.center_2>p{
+    margin-top: 25px;
+    font-size: 46px;
+    font-family: "CSTM Xprmntl 02";
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+}
+
+.center_3{
+    flex-direction: row-reverse;
+}
+
+.center_1,.center_3>p{
+    font-size: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 275px) and (max-width: 833px) {
+    .container{
+        background-color: black;
+        width: 100vw;
+        max-width: 762px;
+        min-width: 350px;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    video{
+        width: 88.8vw;
+        max-width: 762px;
+    }
+
+    .header{
+        margin-top: 0;
+        padding-top: 9.4vw;
+    }
+
+    .logo{
+        max-width: 44px;
+    }
+
+    .top{
+        padding-top: 30vw;
+    }
+
+    .center_1{
+        margin-top: 100px;
+    }
+
+    .center_1,.center_3{
+        flex-direction: column;
+    }
+
+    .center_1,.center_3>p{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+
+
+    .footer{
+        margin-top: 200px;
+    }
+
+    .footer-up {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        align-items: flex-end;
+    }
+
+    .footer-down{
+        padding-bottom: 50px;
+    }
+
+    .wrapper>nav {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 50vw;
+    }
+
+    .wrapper>nav>ul>li {
+        padding-top: 20px;
+    }
+
+    #a_faq{
+        font-size: 36px;
+        font-family: "CSTM Xprmntl 02";
+        font-weight: normal;
+        color: white;
+    }
+
+}
